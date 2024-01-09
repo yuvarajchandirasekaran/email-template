@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url(./Helvetica-Bold.eot);
+  src: url(./Helvetica-Bold.eot?#iefix) format('embedded-opentype'),
+       url(./Helvetica-Bold.otf) format('otf'),
+       url(./Helvetica-Bold.svg#Helvetica-Bold) format('svg'),
+       url(./Helvetica-Bold.ttf) format('truetype'),
+       url(./Helvetica-Bold.woff) format('woff'),
+       url(./Helvetica-Bold.woff2) format('woff2');
+}
+
+
+
+/* <!-- <table width=" 100%" style="padding: 20px 12px; border-collapse: collapse;">
+
+<thead style="border-bottom: 1px solid black; text-align: left;">
+  <tr>
+    <th colspan="2" class="order-table-heading">
+      ITEMS ORDERED</th>
+    <th class="order-table-heading" style="text-align: center;">
+      QTY</th>
+    <th class="order-table-heading" style="text-align: end;">
+      PRICE</th>
+  </tr>
+</thead>
+<tbody class="ordered-items-body">
+  <tr>
+    <td>
+      <img src="images/product.png" alt="product-image">
+    </td>
+    <td>
+      <p
+        style="font-family: var(--arial-font); font-size: 13px; line-height: 20px; font-weight: bold;">
+        Merits Health Dealer Power Chair</p>
+      <p
+        style="max-width: 231px; font-family: var(--arial-font); font-size: 10px; line-height: 14px;">
+        Choose Color Option: Blue
+        Merits Health Dualer Power Chair:
+        Merits Health Dualer Power Chair
+        Power Elevating Seat Lift:
+        Power Elevating Seat Lift, Elevates 5” (Included)
+        Choose Seat Size:
+        18”W x 16”-18” x 20”H, Depth-Adjustable (Standard)
+        Choose Footrest Option:
+        Footplate, 12” x 9.5” (Standard)</p>
+    </td>
+    <td style="text-align: center;">
+      <p
+        style="font-family: var(--arial-font); font-size: 13px; line-height: 20px;">
+        1</p>
+    </td>
+    <td style="text-align: right;">
+      <p
+        style="font-family: var(--arial-font); font-size: 13px; line-height: 20px;">
+        $3,199.00</p>
+    </td>
+  </tr>
+</tbody>
+<tfoot class="ordered-items-footer">
+
+  <tr>
+    <td colspan="3">Subtotal</td>
+    <td>$3,199.00</td>
+  </tr>
+  <tr>
+    <td colspan="3">Shipping & Handling</td>
+    <td>$0.00</td>
+  </tr>
+  <tr>
+    <td colspan="3" style="font-weight: bold;">Grand Total</td>
+    <td style="font-weight: bold;">$3,199.00</td>
+  </tr>
+
+</tfoot>
+</table> -->
+<!-- </td> --> */
+
+
+		/* .inner-content td,
+		th {
+			padding-right: 10px;
+		}
+
+		.ordered-items-body>tr>td {
+			padding-top: 11px;
+			padding-bottom: 20px;
+			vertical-align: top;
+		}
+
+		.ordered-items-footer {
+			background-color: #F2FBE0;
+			border-top: 1px solid #C4C4C4;
+			text-align: right;
+		}
+
+		.ordered-items-footer>* {
+			font-family: var(--arial-font);
+			font-size: 13px;
+			line-height: 20px;
+
+		}
+
+		.ordered-items-footer>:first-child>td {
+			padding-top: 11px;
+		}
+
+		.ordered-items-footer>:last-child>td {
+			padding-bottom: 11px;
+		} */

@@ -1,0 +1,481 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SailChimp HTML Email Template</title>
+	<style type="text/css">
+		/* haveltica font */
+		@font-face {
+			font-family: 'Helvetica-Bold';
+			src: url(fonts/helvetica/Helvetica-Bold.eot);
+			src: url(fonts/helvetica/Helvetica-Bold.eot?#iefix) format('embedded-opentype'),
+				url(fonts/helvetica/Helvetica-Bold.otf) format('otf'),
+				url(fonts/helvetica/Helvetica-Bold.svg#Helvetica-Bold) format('svg'),
+				url(fonts/helvetica/Helvetica-Bold.ttf) format('truetype'),
+				url(fonts/helvetica/Helvetica-Bold.woff) format('woff'),
+				url(fonts/helvetica/Helvetica-Bold.woff2) format('woff2');
+		}
+
+		/* arial font */
+		@font-face {
+			font-family: 'Arial Regular';
+			font-style: normal;
+			font-weight: normal;
+			src: local('Arial Regular'), url(fonts/arial/ARIAL.woff) format('woff');
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		:root {
+			--haveltica-font: Helvetica-Bold, sans-serif;
+			--arial-font: Arial, sans-serif;
+			--primary-color: #004884;
+			--secondary-color: #000000;
+			--third-color: #FFFFFF;
+		}
+
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		table {
+			border-spacing: 0;
+			border-collapse: collapse;
+		}
+
+		td {
+			padding: 0;
+
+		}
+
+		img {
+			border: 0;
+		}
+
+		.bg-img-props {
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		.wrapper {
+			width: 100%;
+			table-layout: fixed;
+		}
+
+		.main {
+			max-width: 700px;
+			width: 100%;
+			margin: auto;
+			box-shadow: 0px 3px 20px #00000017;
+		}
+
+		.banner>* {
+			color: #FFFFFF;
+		}
+
+		.two-columns {
+			display: flex;
+			padding: 20px 12px ;
+
+		}
+
+		.two-columns td {
+			padding-top: 11px;
+		}
+
+		.column {
+			display: inline-block;
+		}
+
+		.section-ordered-items .column tr td {
+			padding-bottom: 25px;
+		}
+
+		.column p:not(.title, .sub-title) {
+			font-family: var(--arial-font);
+			font-size: 13px;
+			line-height: 19px;
+		}
+
+		.title,
+		.sub-title {
+			font-family: var(--arial-font);
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 25px;
+			color: #004884;
+			padding-bottom: 9px;
+		}
+
+		.sub-title {
+			font-size: 13px;
+			line-height: 22px;
+			padding-right: 10px;
+		}
+
+		.info {
+			max-width: 180px;
+		}
+
+		.section>td {
+			padding-top: 10px;
+			padding-right: 25px;
+			padding-left: 25px;
+		}
+
+		.section>td>table {
+			width: 100%;
+			background-color: #FFFFFF;
+		}
+
+
+		.order-table-heading {
+			padding-bottom: 5px;
+			font-family: var(--arial-font);
+			font-size: 12px;
+			line-height: 25px;
+			font-weight: bold;
+			color: var(--primary-color);
+		}
+
+		.total-section p {
+			font-size: 13px;
+			font-family: var(--arial-font);
+			color: var(--secondary-color);
+			line-height: 21px;
+		}
+
+		.grand-total {
+			font-weight: bold;
+		}
+
+		/* ---table footer--- */
+		.footer {
+			background-color: #0C2A4A;
+		}
+
+		.footer>tr>td {
+			padding-right: 12px;
+			padding-left: 12px;
+		}
+
+		.footer>* {
+			font-family: var(--arial-font);
+			color: var(--third-color);
+			font-size: 12px;
+			font-weight: regular;
+			line-height: 18px;
+		}
+
+		.social-icons {
+			margin: 0 -10px;
+		}
+
+		.social-icons>a {
+			margin: 0 10px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<center class="wrapper">
+
+		<table class="main" width="100%">
+			<!-- LOGO -->
+			<thead style="background-color: #FFFFFF;">
+				<tr>
+					<td style="padding: 15px 0px 12px 0; text-align: center;">
+						<img src="images/logo.svg" alt="Logo" style="max-width: 86px; height: auto; width: 100%;">
+					</td>
+				</tr>
+			</thead>
+			<tbody style="background-color: #F8F7F7;">
+				<!-- ORDER GREETING SECTION -->
+				<tr class="banner bg-img-props"
+					style="background-image: url(images/banner-bg.png); text-align: center;">
+					<td style="padding: 24px 58px 30px; ">
+						<h1
+							style="font-family:var(--haveltica-font); font-size: 32px; line-height: normal; color: #C6EF7A; ">
+							Thanks,
+							[Name] for your order!</h1>
+						<p
+							style="font-family: var(--arial-font); font-size: 16px; font-style: italic; line-height: 20px; margin-top: 7px; margin-bottom: 19px;">
+							We have received your order and we’re working to get it packed up and on its way. We’ll send
+							a shipping confirmation emails as soon as it ships.</p>
+						<p class="ord-id"
+							style="font-family: var(--arial-font); font-weight: bold; font-size: 20px; line-height: 20px;">
+							Order #:
+							000001</p>
+						<p class="ord-date"
+							style="font-family: var(--arial-font); font-weight: bold; font-size: 20px; line-height: 20px; margin-top: 6px; margin-bottom: 15px;">
+							Order Date: 12/12/22</p>
+						<a href="#" class="check-status-btn"
+							style="background-color: #B561AF; border-radius: 6px; color: #FFFFFF;display: inline-block; font-family: PT Sans,sans-serif; font-weight: bold; padding: 13.5px 28px; text-decoration: none; ">CHECK
+							ORDER STATUS</a>
+					</td>
+				</tr>
+				<!-- ORDER INFORMATIONS -->
+				<tr class="section order-info">
+					<td>
+						<table>
+							<tr>
+								<td class="two-columns inner-content"
+									style="flex-wrap: wrap; justify-content: space-around; box-shadow: 0px 3px 20px #00000015;">
+									<table class="column">
+										<tr>
+											<td>
+												<p class="title">Shipping Info</p>
+												<p class="info">
+													Antwon Wisozk
+													Company Name
+													75291 Brittany Station Apt. 409
+													Batzburgh, MT 86320
+													United States
+													(507) 725-8352
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p class="title">Shipping Method</p>
+												<p>Free Shipping - No Shipping Charge</p>
+											</td>
+										</tr>
+									</table>
+
+									<table class="column">
+										<tr>
+											<td>
+												<p class="title">Billing Info</p>
+												<p class="info">
+													Austin Hartmann
+													Company Name
+													38815 Hoppe Ports Apt. 174
+													North Madisynberg, CA 00179
+													United States
+													(320) 332-8230
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p class="title">Payment Method</p>
+												<p>Credit Card</p>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding: 0; padding-left: 24px;">
+												<p>
+													<span class="sub-title">Credit Card Type</span>
+													<span style="color: #000000;">Visa</span>
+												</p>
+												<p>
+													<span class="sub-title">Credit Card Number</span>
+													<span style="color: #000000;">xxxx-1719</span>
+												</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- ORDER COMMENTS -->
+				<tr class="section order-comments">
+					<td>
+						<table>
+							<tr>
+								<td style="padding: 20px 12px; box-shadow: 0px 3px 20px #00000015;">
+									<table width="100%">
+										<tr>
+											<td style="border-bottom: 1px solid #C4C4C4;">
+												<p class="title">Order Comments</p>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-top: 12px;">
+												<p
+													style="font-family: var(--arial-font); font-size: 13px; line-height: 20px; ">
+													Custom order message goes in this area.</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- ORDERED ITEMS -->
+				<tr class="section ordered-items">
+					<td class="inner-content" style="padding-bottom: 45px;">
+						<table style="box-shadow: 0px 3px 20px #00000015;">
+							<tr>
+								<!-- <td style="padding: 20px 12px;""> -->
+								<td class="two-columns" style=" justify-content: space-between;">
+									<table style="flex: 1;">
+										<tr>
+											<th class="order-table-heading"
+												style="text-align: left; border-bottom: 1px solid black;">ITEMS ORDERED
+											</th>
+										</tr>
+										<tr>
+											<td style="display: inline-block;   vertical-align: top; padding-right: 30px;">
+												<img src="images/product.png" alt="product-image">
+											</td>
+											<td style="display: inline-block;">
+												<p
+													style="font-family: var(--arial-font); font-size: 13px; line-height: 20px; font-weight: bold;">
+													Merits Health Dealer Power Chair</p>
+												<p
+													style="max-width: 231px; font-family: var(--arial-font); font-size: 10px; line-height: 14px;">
+													Choose Color Option: Blue
+													Merits Health Dualer Power Chair:
+													Merits Health Dualer Power Chair
+													Power Elevating Seat Lift:
+													Power Elevating Seat Lift, Elevates 5” (Included)
+													Choose Seat Size:
+													18”W x 16”-18” x 20”H, Depth-Adjustable (Standard)
+													Choose Footrest Option:
+													Footplate, 12” x 9.5” (Standard)</p>
+											</td>
+										</tr>
+									</table>
+									<table class="" style="width: 40%;">
+										<tr>
+											<td
+												style="display: flex; justify-content: center; max-width: 262px; width: 100%; padding: 0;">
+												<table class="" style="flex: 1;">
+													<tr>
+														<th class="order-table-heading"
+															style=" border-bottom: 1px solid black;">QTY</th>
+													</tr>
+													<tr>
+														<td style="text-align: center;">
+															<p>1</p>
+														</td>
+													</tr>
+												</table>
+												<table class="">
+													<tr>
+														<th class="order-table-heading"
+															style=" border-bottom: 1px solid black;">PRICE</th>
+													</tr>
+													<tr>
+														<td>
+															<p>$3,199.00</p>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- price total section -->
+							<tr>
+								<td style="padding: 15px 12px;">
+									<table class="two-columns total-section"
+										style="justify-content: end; text-align: end; border-top: 1px solid #C4C4C4; background-color: #F2FBE0; padding: 0;">
+										<tr>
+											<td
+												style="display: flex; padding: 0; padding-right: 10px; padding-bottom: 10px; width: 100%;">
+												<table class="column">
+													<tr>
+														<td style="padding-right: 55px;">
+															<p>Subtotal</p>
+															<p>Shipping & Handling</p>
+															<p class="grand-total">Grand Total</p>
+														</td>
+													</tr>
+												</table>
+												<table class="column">
+													<tr>
+														<td>
+															<p>$3,199.00</p>
+															<p>$0.00</p>
+															<p class="grand-total">$3,199.00</p>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot class="footer">
+				<tr>
+					<td style="display: flex; justify-content: center; padding-top: 17px;">
+						<table>
+							<tr>
+								<td style="padding-right: 15px; border-right: 1px solid #707070;">
+									<img src="images/Group 2562.svg" alt="">
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td style="padding-left: 15px; border-left: 1px solid #707070;">
+									<p style="font-size: 14px; font-weight: bold;">Thank you for your business!</p>
+									<p>Build My Wheelchair</p>
+									<a href="#" style="color: #C6EF7A;">buildmywheelchair.com</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td style="display: flex; padding-top: 25px; padding-bottom: 25px; justify-content: center;">
+						<table>
+							<tr>
+								<td style="padding-right: 30px;  text-align: right;">
+									<p style="font-weight: bold; padding-bottom: 6px;">HAVE QUESTIONS? CALL US</p>
+									<p>844-269-4335, Mon-Fri 8-5pm Central</p>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<p style="font-weight: bold; padding-bottom: 5px;">Connect With Us!</p>
+
+								</td>
+							</tr>
+							<tr>
+								<td class="social-icons">
+									<a href=""><img src="images/fb.png" alt="fb"></a>
+									<a href=""><img src="images/twitter.png" alt="twitter"></a>
+									<a href=""><img src="images/insta.png" alt="insta"></a>
+									<a href=""><img src="images/youtube.png" alt="youtube"></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center; padding-bottom: 10px;">
+						<p style="font-size: 9px; color: #BFBFBF;">Copyright ©2022 Build My Wheelchair. All Rights
+							Reserved. </p>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</center> <!-- End Wrapper -->
+
+</body>
+
+</html>
